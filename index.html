@@ -196,127 +196,425 @@ public class TestException {
         </section>
         <h1>Réponses - Questions Java</h1>
     
-        <div class="answer">
-            <div class="question">3. Parmi les niveaux de visibilité suivants, lesquels existent en Java ?</div>
-            <div class="response">Public, Private, Protected</div>
+        <div class="question">
+            <h3>Parmi les niveaux de visibilité suivants, lesquels existent en Java ?</h3>
+            <ul>
+                <li>Public</li>
+                <li>Private</li>
+                <li>Protected</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">4. Que se passe-t-il si une exception n'est pas capturée ?</div>
-            <div class="response">L'exception est envoyée à un gestionnaire d'exceptions global.<br>Le programme s'arrête immédiatement et affiche un message d'erreur.</div>
+        
+        <div class="question">
+            <h3>Que se passe-t-il si une exception n'est pas capturée ?</h3>
+            <ul>
+                <li>Le programme s'arrête immédiatement et affiche un message d'erreur.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">5. Dans une classe, un attribut déclaré sans préciser son niveau de visibilité est visible :</div>
-            <div class="response">Dans les classes du même package</div>
+        
+        <div class="question">
+            <h3>Dans une classe, un attribut déclaré sans préciser son niveau de visibilité est visible :</h3>
+            <ul>
+                <li>dans les classes du même package.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">8. Quelle interface permet de stocker des éléments sous la forme clé-valeur ?</div>
-            <div class="response">Map</div>
+        
+        <div class="question">
+            <h3>Séquence d'affichage du code :</h3>
+            <ul>
+                <li>A B D E F</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">9. À quoi sert le mot clé "finally" en Java ?</div>
-            <div class="response">Il définit un bloc de code qui sera toujours exécuté, qu'une exception se produise ou non.</div>
+        
+        <div class="question">
+            <h3>Remplacer #@# par le mot permettant de faire référence à la classe mère :</h3>
+            <ul>
+                <li>super</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">10. Parmi les énoncés suivants, lesquels sont vrais pour les tableaux en Java ?</div>
-            <div class="response">Un tableau a une taille fixe.<br>Un tableau est défini pour un type que l'on précise à sa création.</div>
+        
+        <div class="question">
+            <h3>Quelle interface permet de stocker des éléments sous la forme clé-valeur ?</h3>
+            <ul>
+                <li>Map</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">11. Ce code ne compile pas. Comment pouvez-vous le corriger ?</div>
-            <div class="response">En ajoutant au constructeur un paramètre de type String et en l'affectant à l'attribut (dans le constructeur).</div>
+        
+        <div class="question">
+            <h3>A quoi sert le mot-clé "finally" en Java ?</h3>
+            <ul>
+                <li>Il définit un bloc de code qui sera toujours exécuté, qu'une exception se produise ou non.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">12. Quel est le mot clé qui permet de déclencher la levée d'une exception en Java ?</div>
-            <div class="response">throw</div>
+        
+        <div class="question">
+            <h3>Parmi les énoncés sur les tableaux en Java, lesquels sont vrais ?</h3>
+            <ul>
+                <li>Un tableau a une taille fixe.</li>
+                <li>Un tableau est défini pour un type que l'on précise à sa création.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">13. Une classe peut-elle avoir un constructeur "private" ?</div>
-            <div class="response">Oui</div>
+        
+        <div class="question">
+            <h3>Pourquoi le code ne compile pas ?</h3>
+            <ul>
+                <li>En ajoutant au constructeur un paramètre de type String et en l'affectant à l'attribut (dans le constructeur).</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">14. Debugage</div>
-            <div class="response">Il est possible d'exécuter pas à pas en Java.</div>
+        
+        <div class="question">
+            <h3>Quel est le mot-clé pour déclencher une exception ?</h3>
+            <ul>
+                <li>throw</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">15. Quelle est la principale différence entre un fichier .java et un fichier .class ?</div>
-            <div class="response">Le fichier .java contient le code source, tandis que le fichier .class contient le bytecode compilé.</div>
+        
+        <div class="question">
+            <h3>Une classe peut-elle avoir un constructeur "private" ?</h3>
+            <ul>
+                <li>Oui</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">16. Une énumération (enum) peut-elle avoir un constructeur ?</div>
-            <div class="response">Oui</div>
+        
+        <div class="question">
+            <h3>Debugage :</h3>
+            <ul>
+                <li>Il est possible d'exécuter pas à pas en Java.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">17. Que retournera un appel à cette méthode ?</div>
-            <div class="response">Rien, ce code ne compilera pas.</div>
+        
+        <div class="question">
+            <h3>Différence entre un fichier .java et un fichier .class :</h3>
+            <ul>
+                <li>Le fichier .java contient le code source, tandis que le fichier .class contient le bytecode compilé.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">18. Que faut-il écrire pour que la classe A implémente l'interface I ?</div>
-            <div class="response">class A implements I</div>
+        
+        <div class="question">
+            <h3>Une énumération (enum) peut-elle avoir un constructeur ?</h3>
+            <ul>
+                <li>Oui</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">19. Laquelle de ces méthodes supprime tous les éléments d’une collection ?</div>
-            <div class="response">clear()</div>
+        
+        <div class="question">
+            <h3>Que retournera l’appel à cette méthode ?</h3>
+            <ul>
+                <li>Rien, ce code ne compilera pas.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">20. Dans une classe, un attribut "static"</div>
-            <div class="response">Possède la même valeur pour toutes les instances de la classe.</div>
+        
+        <div class="question">
+            <h3>Que faut-il écrire pour que la classe A implémente l'interface I ?</h3>
+            <ul>
+                <li>class A implements I</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">21. Que va faire le code suivant :</div>
-            <div class="response">Afficher "France"</div>
+        
+        <div class="question">
+            <h3>Méthode pour supprimer tous les éléments d’une collection :</h3>
+            <ul>
+                <li>clear()</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">22. Que peut-on ajouter après un bloc try-catch ?</div>
-            <div class="response">finally</div>
+        
+        <div class="question">
+            <h3>Dans une classe, un attribut "static" :</h3>
+            <ul>
+                <li>Possède la même valeur pour toutes les instances de la classe.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">23. Où peut-on utiliser le mot clé default ?</div>
-            <div class="response">Dans une interface</div>
+        
+        <div class="question">
+            <h3>Que va faire ce code ?</h3>
+            <ul>
+                <li>Rien, ce code ne compilera pas.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">25. Object : Cocher les affirmations correctes :</div>
-            <div class="response">Une valeur d'énumération est un Object.<br>Toute instance de classe est une instance d'Object.<br>String est un Object.</div>
+        
+        <div class="question">
+            <h3>Que peut-on ajouter après un bloc try-catch ?</h3>
+            <ul>
+                <li>finally</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">26. Quelles sont les déclarations correctes du point d'entrée d'un programme Java ?</div>
-            <div class="response">public static void main (String ... args) { }<br>public static void main (String[] args) { }</div>
+        
+        <div class="question">
+            <h3>Où peut-on utiliser le mot-clé default ?</h3>
+            <ul>
+                <li>Dans une interface.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">30. Le Java est un langage :</div>
-            <div class="response">Compilé</div>
+        
+        <div class="question">
+            <h3>Que va afficher ce code ?</h3>
+            <ul>
+                <li>Rien, ce code ne compilera pas.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">32. Quelles formes d'héritage sont supportées en Java ?</div>
-            <div class="response">Héritage simple de classes.</div>
+        
+        <div class="question">
+            <h3>Object : Cocher les affirmations correctes :</h3>
+            <ul>
+                <li>Une valeur d'énumération est un Object.</li>
+                <li>Toute instance de classe est une instance d'Object.</li>
+                <li>String est un Object.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">34. Quel bloc est toujours exécuté, indépendamment de l’exception levée ?</div>
-            <div class="response">finally</div>
+        
+        <div class="question">
+            <h3>Déclaration correcte du point d’entrée d’un programme Java :</h3>
+            <ul>
+                <li>public static void main(String[] args) { }</li>
+                <li>public static void main(String ... args) { }</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">36. Dans une interface, les méthodes doivent être déclarées "abstract".</div>
-            <div class="response">Faux</div>
+        
+        <div class="question">
+            <h3>Cas nécessitant l’utilisation de super() :</h3>
+            <ul>
+                <li>Si B veut appeler explicitement un constructeur de A.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">37. Le polymorphisme permet de fournir une interface unique à des entités pouvant avoir différents types.</div>
-            <div class="response">Vrai</div>
+        
+        <div class="question">
+            <h3>Usage de final :</h3>
+            <ul>
+                <li>final peut avoir un effet sur l'héritage.</li>
+                <li>final peut avoir un effet sur l'affectation.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">39. Que peut contenir une interface ?</div>
-            <div class="response">Des signatures de méthodes.<br>Des méthodes default et static.<br>Des méthodes abstraites (abstract).</div>
+        
+        <div class="question">
+            <h3>Que faut-il écrire pour que la classe A hérite de la classe B ?</h3>
+            <ul>
+                <li>class A extends B</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">40. La surcharge est possible en modifiant le type de retour de la méthode :</div>
-            <div class="response">Faux</div>
+        
+        <div class="question">
+            <h3>Java est un langage :</h3>
+            <ul>
+                <li>Compilé.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">41. Qu'affichent ces instructions ?</div>
-            <div class="response">9</div>
+        
+        <div class="question">
+            <h3>Formes d'héritage supportées en Java :</h3>
+            <ul>
+                <li>Héritage simple de classes.</li>
+            </ul>
         </div>
-        <div class="answer">
-            <div class="question">42. Qu'est-ce que le Garbage Collector en Java ?</div>
-            <div class="response">Un processus qui gère la mémoire en libérant de l'espace.</div>
+        
+        <div class="question">
+            <h3>Règles de nommage : Cocher les affirmations correctes :</h3>
+            <ul>
+                <li>Un type (class, enum, interface) a par convention un nom qui commence par une majuscule.</li>
+                <li>Les noms des variables commencent par convention par une minuscule ou le caractère _.</li>
+            </ul>
         </div>
-        </section>
+        
+        <div class="question">
+            <h3>Bloc toujours exécuté, indépendamment de l’exception levée :</h3>
+            <ul>
+                <li>finally</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>Le code suivant compile-t-il ?</h3>
+            <ul>
+                <li>Non</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>Dans une interface, les méthodes doivent être déclarées "abstract" :</h3>
+            <ul>
+                <li>Faux</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>Le polymorphisme permet de fournir une interface unique à des entités pouvant avoir différents types :</h3>
+            <ul>
+                <li>Vrai</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>Que peut contenir une interface ?</h3>
+            <ul>
+                <li>Des signatures de méthodes.</li>
+                <li>Des méthodes abstraites (abstract).</li>
+                <li>Des méthodes default et static.</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>La surcharge est-elle possible en modifiant le type de retour de la méthode ?</h3>
+            <ul>
+                <li>Faux</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>Qu'est-ce que le Garbage Collector en Java ?</h3>
+            <ul>
+                <li>Un processus qui gère la mémoire en libérant de l'espace.</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h3>1. Exception - Séquence d'affichage correcte</h3>
+            <ul>
+                <li>A B D E F</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>2. Collections</h3>
+            <ul>
+                <li>Si Roller est une classe fille de Vehicule, il est possible d'ajouter une instance de Roller à la liste vehicules.</li>
+                <li>La taille de la liste peut être obtenue à partir de sa méthode size() (sans paramètre).</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>3. Programme 4 - Remplacer #@# par :</h3>
+            <ul>
+                <li>super</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>4. Surcharge</h3>
+            <ul>
+                <li>protected String maMethode()</li>
+                <li>protected String maMethode(double param1)</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>5. Point d'entrée du programme</h3>
+            <ul>
+                <li>public static void main(String[] args) { }</li>
+                <li>public static void main(String ... args) { }</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>6. Tableaux et collections</h3>
+            <ul>
+                <li>Vrai</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>7. Programme 6</h3>
+            <ul>
+                <li>var sac = new Sac();</li>
+                <li>Sac[] sacs = new Sac[8];</li>
+                <li>List&lt;Sac&gt; sacs = new ArrayList&lt;Sac&gt;();</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>8. Les interfaces</h3>
+            <ul>
+                <li>public interface InterfaceA { }</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>9. Généralités</h3>
+            <ul>
+                <li>Oui</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>10. Syntaxe - Boucles</h3>
+            <ul>
+                <li>for (var i = 0; i &lt; 10; i++) { }</li>
+                <li>int i = 0; while (i &lt; 10) { }</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>11. Programme 5</h3>
+            <ul>
+                <li>6</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>12. Polymorphisme</h3>
+            <ul>
+                <li>Le polymorphisme permet d'associer à une même méthode des comportements/implémentations différents.</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>13. Constante - Remplacer #@# par :</h3>
+            <ul>
+                <li>final</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>14. Les exceptions</h3>
+            <ul>
+                <li>Les exceptions héritent toutes d'une classe Exception.</li>
+                <li>Les exceptions peuvent comporter des attributs et des méthodes.</li>
+                <li>Les exceptions permettent d'interrompre l'exécution au moins du bloc d'instruction courant.</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>15. Les énumérations</h3>
+            <ul>
+                <li>L'énumération est comme une classe à la différence que les instances de classe sont toutes connues.</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>16. Héritage</h3>
+            <ul>
+                <li>A hérite de B</li>
+                <li>Le code suivant est valide : B test = new A();</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>17. Programme 2 - Remplacer @#@ par :</h3>
+            <ul>
+                <li>:</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>18. Programme 1</h3>
+            <ul>
+                <li>Le nombre 20 s'affiche.</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>19. Programme 3</h3>
+            <ul>
+                <li>Toute classe qui hérite de AMaClasse et qui n'est pas abstraite doit faire appel au constructeur de AMaClasse.</li>
+                <li>Il est possible de créer une variable de type AMaClasse.</li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <h3>20. Règles de nommage</h3>
+            <ul>
+                <li>Un type (class, enum, interface) a par convention un nom qui commence par une majuscule.</li>
+                <li>Les noms des variables commencent par convention par une minuscule ou le caractère _.</li>
+            </ul>
+        </div>
+                
         <section>
             <div class="image-container">
                 <img src="image/aurevoir.jpg" alt="Illustration Java">
