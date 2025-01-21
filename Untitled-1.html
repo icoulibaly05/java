@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Complète à Java</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #3e64ff;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+            border-left: 5px solid #3e64ff;
+            padding-left: 10px;
+        }
+
+        section p {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        pre {
+            background: #f4f4f9;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            text-align: center;
+            background: #3e64ff;
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Introduction Complète à Java</h1>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="image/OIP (5).jpeg" alt="Illustration Java">
+        </div>
+
+        <section>
+            <h2>1. Qu'est-ce que Java ?</h2>
+            <p>Java est un langage de programmation orienté objet, créé en 1995 par Sun Microsystems, maintenant détenu par Oracle. Il est connu pour sa portabilité grâce à la JVM (Java Virtual Machine), qui permet aux programmes écrits en Java de fonctionner sur toutes les plateformes supportant la JVM.</p>
+        </section>
+
+        <section>
+            <h2>2. Les Bases de Java</h2>
+            <p>Un programme Java commence toujours par une classe contenant une méthode principale <code>main</code>. Voici un exemple simple :</p>
+            <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>3. Les Types de Données</h2>
+            <p>Java prend en charge plusieurs types de données :</p>
+            <ul>
+                <li><b>Primitifs :</b> <code>int</code>, <code>float</code>, <code>boolean</code>, <code>char</code>, etc.</li>
+                <li><b>Référencés :</b> <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.</li>
+            </ul>
+            <p>Exemple :</p>
+            <pre><code>int age = 25;
+String name = "Alice";
+ArrayList<String> list = new ArrayList<>();
+list.add("Java");</code></pre>
+        </section>
+
+        <section>
+            <h2>4. Programmation Orientée Objet</h2>
+            <p>Java est basé sur les principes de la POO :</p>
+            <ul>
+                <li><b>Encapsulation :</b> Restreindre l'accès aux données via des modificateurs comme <code>private</code>.</li>
+                <li><b>Héritage :</b> Permettre à une classe de réutiliser les propriétés d'une autre classe.</li>
+                <li><b>Polymorphisme :</b> Une méthode peut se comporter différemment selon les contextes.</li>
+                <li><b>Abstraction :</b> Masquer les détails d'implémentation pour se concentrer sur l'essentiel.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Gestion des Exceptions</h2>
+            <p>Les exceptions permettent de gérer les erreurs pendant l'exécution d'un programme. Structure typique :</p>
+            <pre><code>try {
+    // Code pouvant générer une exception
+} catch (ExceptionType e) {
+    // Code pour gérer l'exception
+} finally {
+    // Code qui s'exécute toujours
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>6. Framework des Collections</h2>
+            <p>Java propose un riche ensemble de collections pour stocker et manipuler des données :</p>
+            <ul>
+                <li><b>List :</b> <code>ArrayList</code>, <code>LinkedList</code></li>
+                <li><b>Set :</b> <code>HashSet</code>, <code>TreeSet</code></li>
+                <li><b>Map :</b> <code>HashMap</code>, <code>TreeMap</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Les Interfaces</h2>
+            <p>Une interface définit un contrat que les classes implémentent. Elles contiennent des méthodes abstraites, mais depuis Java 8, elles peuvent également inclure des méthodes <code>default</code> et <code>static</code>.</p>
+            <pre><code>interface Animal {
+    void manger();
+    default void dormir() {
+        System.out.println("Je dors.");
+    }
+}
+
+class Chat implements Animal {
+    public void manger() {
+        System.out.println("Le chat mange.");
+    }
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>8. Les Exceptions Personnalisées</h2>
+            <p>Vous pouvez créer vos propres exceptions en étendant la classe <code>Exception</code> :</p>
+            <pre><code>class MonException extends Exception {
+    public MonException(String message) {
+        super(message);
+    }
+}
+
+public class TestException {
+    public static void main(String[] args) {
+        try {
+            throw new MonException("Erreur personnalisée.");
+        } catch (MonException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}</code></pre>
+        </section>
+        <h1>Réponses - Questions Java</h1>
+    
+        <div class="answer">
+            <div class="question">3. Parmi les niveaux de visibilité suivants, lesquels existent en Java ?</div>
+            <div class="response">Public, Private, Protected</div>
+        </div>
+        <div class="answer">
+            <div class="question">4. Que se passe-t-il si une exception n'est pas capturée ?</div>
+            <div class="response">L'exception est envoyée à un gestionnaire d'exceptions global.<br>Le programme s'arrête immédiatement et affiche un message d'erreur.</div>
+        </div>
+        <div class="answer">
+            <div class="question">5. Dans une classe, un attribut déclaré sans préciser son niveau de visibilité est visible :</div>
+            <div class="response">Dans les classes du même package</div>
+        </div>
+        <div class="answer">
+            <div class="question">8. Quelle interface permet de stocker des éléments sous la forme clé-valeur ?</div>
+            <div class="response">Map</div>
+        </div>
+        <div class="answer">
+            <div class="question">9. À quoi sert le mot clé "finally" en Java ?</div>
+            <div class="response">Il définit un bloc de code qui sera toujours exécuté, qu'une exception se produise ou non.</div>
+        </div>
+        <div class="answer">
+            <div class="question">10. Parmi les énoncés suivants, lesquels sont vrais pour les tableaux en Java ?</div>
+            <div class="response">Un tableau a une taille fixe.<br>Un tableau est défini pour un type que l'on précise à sa création.</div>
+        </div>
+        <div class="answer">
+            <div class="question">11. Ce code ne compile pas. Comment pouvez-vous le corriger ?</div>
+            <div class="response">En ajoutant au constructeur un paramètre de type String et en l'affectant à l'attribut (dans le constructeur).</div>
+        </div>
+        <div class="answer">
+            <div class="question">12. Quel est le mot clé qui permet de déclencher la levée d'une exception en Java ?</div>
+            <div class="response">throw</div>
+        </div>
+        <div class="answer">
+            <div class="question">13. Une classe peut-elle avoir un constructeur "private" ?</div>
+            <div class="response">Oui</div>
+        </div>
+        <div class="answer">
+            <div class="question">14. Debugage</div>
+            <div class="response">Il est possible d'exécuter pas à pas en Java.</div>
+        </div>
+        <div class="answer">
+            <div class="question">15. Quelle est la principale différence entre un fichier .java et un fichier .class ?</div>
+            <div class="response">Le fichier .java contient le code source, tandis que le fichier .class contient le bytecode compilé.</div>
+        </div>
+        <div class="answer">
+            <div class="question">16. Une énumération (enum) peut-elle avoir un constructeur ?</div>
+            <div class="response">Oui</div>
+        </div>
+        <div class="answer">
+            <div class="question">17. Que retournera un appel à cette méthode ?</div>
+            <div class="response">Rien, ce code ne compilera pas.</div>
+        </div>
+        <div class="answer">
+            <div class="question">18. Que faut-il écrire pour que la classe A implémente l'interface I ?</div>
+            <div class="response">class A implements I</div>
+        </div>
+        <div class="answer">
+            <div class="question">19. Laquelle de ces méthodes supprime tous les éléments d’une collection ?</div>
+            <div class="response">clear()</div>
+        </div>
+        <div class="answer">
+            <div class="question">20. Dans une classe, un attribut "static"</div>
+            <div class="response">Possède la même valeur pour toutes les instances de la classe.</div>
+        </div>
+        <div class="answer">
+            <div class="question">21. Que va faire le code suivant :</div>
+            <div class="response">Afficher "France"</div>
+        </div>
+        <div class="answer">
+            <div class="question">22. Que peut-on ajouter après un bloc try-catch ?</div>
+            <div class="response">finally</div>
+        </div>
+        <div class="answer">
+            <div class="question">23. Où peut-on utiliser le mot clé default ?</div>
+            <div class="response">Dans une interface</div>
+        </div>
+        <div class="answer">
+            <div class="question">25. Object : Cocher les affirmations correctes :</div>
+            <div class="response">Une valeur d'énumération est un Object.<br>Toute instance de classe est une instance d'Object.<br>String est un Object.</div>
+        </div>
+        <div class="answer">
+            <div class="question">26. Quelles sont les déclarations correctes du point d'entrée d'un programme Java ?</div>
+            <div class="response">public static void main (String ... args) { }<br>public static void main (String[] args) { }</div>
+        </div>
+        <div class="answer">
+            <div class="question">30. Le Java est un langage :</div>
+            <div class="response">Compilé</div>
+        </div>
+        <div class="answer">
+            <div class="question">32. Quelles formes d'héritage sont supportées en Java ?</div>
+            <div class="response">Héritage simple de classes.</div>
+        </div>
+        <div class="answer">
+            <div class="question">34. Quel bloc est toujours exécuté, indépendamment de l’exception levée ?</div>
+            <div class="response">finally</div>
+        </div>
+        <div class="answer">
+            <div class="question">36. Dans une interface, les méthodes doivent être déclarées "abstract".</div>
+            <div class="response">Faux</div>
+        </div>
+        <div class="answer">
+            <div class="question">37. Le polymorphisme permet de fournir une interface unique à des entités pouvant avoir différents types.</div>
+            <div class="response">Vrai</div>
+        </div>
+        <div class="answer">
+            <div class="question">39. Que peut contenir une interface ?</div>
+            <div class="response">Des signatures de méthodes.<br>Des méthodes default et static.<br>Des méthodes abstraites (abstract).</div>
+        </div>
+        <div class="answer">
+            <div class="question">40. La surcharge est possible en modifiant le type de retour de la méthode :</div>
+            <div class="response">Faux</div>
+        </div>
+        <div class="answer">
+            <div class="question">41. Qu'affichent ces instructions ?</div>
+            <div class="response">9</div>
+        </div>
+        <div class="answer">
+            <div class="question">42. Qu'est-ce que le Garbage Collector en Java ?</div>
+            <div class="response">Un processus qui gère la mémoire en libérant de l'espace.</div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Apprendre Java. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
